@@ -36,4 +36,13 @@ public class HomeController {
 		return "home";
 	}
 	
+	/**
+	 * Directs To Login Page
+	 */
+	@RequestMapping(value = "/login", method = RequestMethod.GET)
+	public String login(Locale locale, Model model) {
+		logger.info("Please login", locale);
+		
+		return "login";
+	}
 }
