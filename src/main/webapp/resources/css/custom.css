@@ -1,0 +1,366 @@
+body {
+  position: relative;
+  padding-top: 40px;
+}
+/* Brand
+-------------------------------------------------- */
+body > .navbar .brand {
+  padding-right: 0;
+  padding-left: 0;
+  margin-left: 20px;
+  float: right;
+  font-weight: bold;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 0 30px rgba(255, 255, 255, 0.125);
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  transition: all .2s linear;
+}
+body > .navbar .brand:hover {
+  text-decoration: none;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 0 30px rgba(255, 255, 255, 0.4);
+}
+/* JUmbotron
+-------------------------------------------------- */
+.jumbotron {
+  position: relative;
+  padding: 40px 0;
+  color: white;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4), 0 0 30px rgba(0, 0, 0, 0.075);
+  background: #020031;
+  background: -moz-linear-gradient(45deg, #020031 0%, #62c462 100%);
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #020031), color-stop(100%, #62c462));
+  background: -webkit-linear-gradient(45deg, #020031 0%, #62c462 100%);
+  background: -o-linear-gradient(45deg, #020031 0%, #62c462 100%);
+  background: -ms-linear-gradient(45deg, #020031 0%, #62c462 100%);
+  background: linear-gradient(45deg, #020031 0%, #62c462 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#020031', endColorstr='#6d3353', GradientType=1);
+  -webkit-box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.2), inset 0 -3px 7px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.2), inset 0 -3px 7px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.2), inset 0 -3px 7px rgba(0, 0, 0, 0.2);
+}
+.jumbotron h1 {
+  font-size: 80px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  line-height: 1;
+}
+.jumbotron p {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.25;
+  margin-bottom: 30px;
+}
+.jumbotron .container {
+  position: relative;
+  z-index: 2;
+}
+.jumbotron:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url(http://twitter.github.com/bootstrap/assets/img/bs-docs-masthead-pattern.png) repeat center center;
+  opacity: .4;
+}
+.subhead {
+  text-align: left;
+  border-bottom: 1px solid #DDD;
+}
+.subhead h1 {
+  font-size: 60px;
+}
+section {
+  padding-top: 30px;
+}
+.thumbnail {
+  margin-bottom: 30px;
+  -webkit-box-shadow:4px 5px 8px 1px #ccc;
+     -moz-box-shadow:4px 5px 8px 1px #ccc;
+          box-shadow:4px 5px 8px 1px #ccc;
+}
+.modal {
+  width: auto;
+}
+.modal-body {
+  max-height: 100%;
+}
+.throbber {
+  position: fixed;
+  width: 20%;
+  left: 38.55%;
+  bottom: 0;
+  background-color: #6E6D71;
+  opacity: .9;
+}
+.throbber .progress {
+  margin-bottom: 0;
+}
+.load {
+  display: block;
+}
+.no-load {
+  display: none;
+}
+.to-top {
+  position: fixed;
+  right: 8.6%;
+  top: 80%;
+  opacity: .5;
+}
+.to-top:hover {
+  opacity: .9;
+}
+.decoy {
+  width: 100%;
+  height: 100%;
+}
+
+/* Overrides */
+.nav-list > .active > a,
+.nav-list > .active > a:hover {
+  background-color: #5bb75b;
+}
+
+/* Sidenav for Docs
+-------------------------------------------------- */
+.category-sidebar {
+  width: 270px;
+  
+  -webkit-transform-origin: 0 67px;
+     -moz-transform-origin: 0 67px;
+       -o-transform-origin: 0 67px;
+      -ms-transform-origin: 0 67px;
+          transform-origin: 0 67px;
+  
+  -webkit-transition: -webkit-transform 1s ease;
+     -moz-transition:    -moz-transform 1s ease;
+       -o-transition:      -o-transform 1s ease;
+      -ms-transition:     -ms-transform 1s ease;
+          transition:         transform 1s ease;
+   
+   -webkit-transform: rotate(90deg);
+  	  -moz-transform: rotate(90deg);
+  	    -o-transform: rotate(90deg);
+  	   -ms-transform: rotate(90deg);
+  	       transform: rotate(90deg);
+}
+.category-sidebar:hover {
+  -webkit-transform: rotate(0);
+  	 -moz-transform: rotate(0);
+  	   -o-transform: rotate(0);
+  	  -ms-transform: rotate(0);
+  	      transform: rotate(0);
+}
+.category-sidenav {
+  width: 100%;
+  margin: 30px 0 0;
+  padding: 0;
+  background-color: #fff;
+  
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+          
+  -webkit-box-shadow: 0 1px 4px rgba(0,0,0,.065);
+     -moz-box-shadow: 0 1px 4px rgba(0,0,0,.065);
+          box-shadow: 0 1px 4px rgba(0,0,0,.065);
+}
+.category-sidenav > li > a {
+  display: block;
+  margin: 0 0 -1px;
+  padding: 8px 14px;
+  border: 1px solid #e5e5e5;
+}
+.category-sidenav > li:first-child > a {
+  -webkit-border-radius: 6px 6px 0 0;
+     -moz-border-radius: 6px 6px 0 0;
+          border-radius: 6px 6px 0 0;
+}
+.category-sidenav > li:last-child > a {
+  -webkit-border-radius: 0 0 6px 6px;
+     -moz-border-radius: 0 0 6px 6px;
+          border-radius: 0 0 6px 6px;
+}
+.category-sidenav > .active > a {
+  padding: 9px 15px;
+  border: 0;
+  text-shadow: 0 1px 0 rgba(0,0,0,.15);
+  -webkit-box-shadow: inset 1px 0 0 rgba(0,0,0,.1), inset -1px 0 0 rgba(0,0,0,.1);
+     -moz-box-shadow: inset 1px 0 0 rgba(0,0,0,.1), inset -1px 0 0 rgba(0,0,0,.1);
+          box-shadow: inset 1px 0 0 rgba(0,0,0,.1), inset -1px 0 0 rgba(0,0,0,.1);
+}
+/* Chevrons */
+.category-sidenav .icon-chevron-right {
+  float: right;
+  margin-top: 2px;
+  margin-right: -6px;
+  opacity: .25;
+}
+.category-sidenav > li > a:hover {
+  background-color: #f5f5f5;
+}
+.category-sidenav a:hover .icon-chevron-right {
+  opacity: .5;
+}
+.category-sidenav .active .icon-chevron-right,
+.category-sidenav .active a:hover .icon-chevron-right {
+  background-image: url(../img/glyphicons-halflings-white.png);
+  opacity: 1;
+}
+.category-sidebar.affix {
+  top: 40px;
+  left: 0;
+}
+.category-sidebar.affix-top {
+  position: absolute;
+  left: 0;
+}
+.category-sidebar.affix-bottom {
+  position: absolute;
+  top: auto;
+  bottom: 270px;
+}
+
+.stealth-sidebar {
+  width: 321px;
+  
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+.stealth-sidenav {
+	width: 100%;
+	margin: 30px 0 0;
+	border: 6px solid #08c;
+	
+	-webkit-border-radius: 6px;
+       -moz-border-radius: 6px;
+            border-radius: 6px;
+    
+    margin-right: -11px;
+    height: 240px;
+}
+.stealth-sidebar.affix {
+  top: 40px;
+  right: 11px;
+}
+.stealth-sidebar.affix-top {
+  position: absolute;
+  right: 11px;
+}
+
+/* Responsive
+-------------------------------------------------- */
+
+/* Desktop
+------------------------- */
+@media (min-width: 1611px) and (max-width: 1830px) {
+  .category-sidebar {
+    width: 166px;
+  }
+}
+
+@media (max-width: 1610px) {
+  .category-sidebar {
+    margin-left: 0;
+    width:166px;
+  }
+  /* .category-sidebar li:not(.active) {
+	display: none;
+  } */
+  
+  /* .category-sidebar li:hover {
+  	display: block;
+  } */
+}
+
+@media (max-width: 980px) {
+  /* Unfloat brand */
+  body > .navbar-fixed-top .brand {
+    float: left;
+    margin-left: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+/* Tablet to desktop
+------------------------- */
+@media (min-width: 768px) and (max-width: 979px) {
+  /* Remove any padding from the body */
+  body {
+    padding-top: 0;
+  }
+  /* Widen masthead and social buttons to fill body padding */
+  .jumbotron {
+    margin-top: -20px; /* Offset bottom margin on .navbar */
+  }
+}
+
+/* Tablet
+------------------------- */
+@media (max-width: 767px) {
+  /* Remove any padding from the body */
+  body {
+    padding-top: 0;
+  }
+
+  /* Widen masthead and social buttons to fill body padding */
+  .jumbotron {
+    padding: 40px 20px;
+    margin-top:   -20px; /* Offset bottom margin on .navbar */
+    margin-right: -20px;
+    margin-left:  -20px;
+  }
+}
+
+/* Landscape phones
+------------------------- */
+@media (max-width: 480px) {
+  /* Remove padding above jumbotron */
+  body {
+    padding-top: 0;
+  }
+
+  /* Change up some type stuff */
+  h2 small {
+    display: block;
+  }
+
+  /* Downsize the jumbotrons */
+  .jumbotron h1 {
+    font-size: 45px;
+  }
+  .jumbotron p,
+  .jumbotron .btn {
+    font-size: 18px;
+  }
+  .jumbotron .btn {
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* center align subhead text like the masthead */
+  .subhead h1,
+  .subhead p {
+    text-align: center;
+  }
+}
+
+/* FB Header Like */
+.fb-like, #___plusone_0 {
+	position: absolute!important;
+	top: 30px;
+}
+.fb-like {
+	right: 0;
+}
+#___plusone_0 {
+	right: 55px;
+}
