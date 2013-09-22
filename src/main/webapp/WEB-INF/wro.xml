@@ -3,9 +3,11 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.isdc.ro/wro wro.xsd">
 
-  	<group name="g1">
-		<css>/resources/css/bootstrap.css</css>
-		<css>/resources/css/bootstrap-responsive.css</css>
-		<css>/resources/css/custom.css</css>
+  	<group name="base">
+		<css>/resources/css/bootstrap/bootstrap.css</css>
+		<css>/resources/css/bootstrap/bootstrap-theme.css</css>
+	</group>
+	<group name="login">
+		<css>/resources/css/login.css</css>
 	</group>
 </groups>
