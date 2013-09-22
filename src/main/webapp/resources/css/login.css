@@ -1,0 +1,12 @@
+/* Full-page background image */
+html {
+	background: url(../img/bride-right-blur-1280x800.png) #fdfdfc no-repeat right top fixed;
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+  	     -o-background-size: cover;
+ 	        background-size: cover;
+}
+
+body {
+	background-color: transparent;
+}
