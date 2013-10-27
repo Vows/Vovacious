@@ -1,7 +1,5 @@
 package com.vows.vovacious;
 
-import java.text.DateFormat;
-import java.util.Date;
 import java.util.Locale;
 
 import org.slf4j.Logger;
@@ -24,16 +22,9 @@ public class HomeController {
 	 */
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home(Locale locale, Model model) {
-		logger.info("Welcome home! The client locale is {}.", locale);
+		logger.info("Welcome! The client locale is {}.", locale);
 		
-		Date date = new Date();
-		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
-		
-		String formattedDate = dateFormat.format(date);
-		
-		model.addAttribute("serverTime", formattedDate );
-		
-		return "login";
+		return "base";
 	}
 	
 	/**
@@ -43,6 +34,6 @@ public class HomeController {
 	public String login(Locale locale, Model model) {
 		logger.info("Please login", locale);
 		
-		return "login";
+		return "base";
 	}
 }
